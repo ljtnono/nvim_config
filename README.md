@@ -37,3 +37,17 @@ vim ~/.config/nvim/init.lua
 * 自动补全
 * tab栏切换
 * bufferline
+
+## 问题解决
+
+1、下载插件很慢如何解决？
+
+配置git代理，具体操作如下：
+
+```bash
+
+git config --global http.proxy "http://127.0.0.1:7890"
+git config --global https.proxy "https://12.0.0.1:7890"
+
+```
+
