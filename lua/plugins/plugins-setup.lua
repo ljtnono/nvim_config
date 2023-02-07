@@ -65,25 +65,30 @@ return require("packer").startup(function(use)
     -- 自动补全
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-nvim-lsp"
-    use "L3MON4D3/LuaSnip" -- snippets引擎，不装这个自动补全会出问题
+    -- snippets引擎，不装这个自动补全会出问题
+    use "L3MON4D3/LuaSnip"
     use "saadparwaiz1/cmp_luasnip"
     use "rafamadriz/friendly-snippets"
-    use "hrsh7th/cmp-path" -- 文件路径
-
-    use "numToStr/Comment.nvim" -- gcc和gc注释
-    use "windwp/nvim-autopairs" -- 自动补全括号
-
-    use "akinsho/bufferline.nvim" -- buffer分割线
-    use "lewis6991/gitsigns.nvim" -- 左则git提示
+    -- 文件路径
+    use "hrsh7th/cmp-path"
+    -- gcc和gc注释
+    use "numToStr/Comment.nvim"
+    -- 自动补全括号
+    use "windwp/nvim-autopairs"
+    -- buffer分割线
+    use "akinsho/bufferline.nvim"
+    -- 左则git提示
+    use "lewis6991/gitsigns.nvim"
 
     -- 终端管理
     use {
         "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
-    end}
-
+        end
+    }
+    -- 文件检索
     use {
-        "nvim-telescope/telescope.nvim", tag = "0.1.1",  -- 文件检索
+        "nvim-telescope/telescope.nvim", tag = "0.1.1",
         requires = { {"nvim-lua/plenary.nvim"} }
     }
 
