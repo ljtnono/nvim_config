@@ -26,3 +26,10 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- bufferline
 keymap.set("n", "<leader>h", ":bprevious<CR>")
 keymap.set("n", "<leader>l", ":bnext<CR>")
+
+-- telescope
+local telescopeBuiltin = require("telescope.builtin")
+keymap.set('n', '<leader>ff', telescopeBuiltin.find_files, {})
+keymap.set('n', '<leader>fg', telescopeBuiltin.live_grep, {})
+keymap.set('n', '<leader>fb', telescopeBuiltin.buffers, {})
+keymap.set('n', '<leader>fh', telescopeBuiltin.help_tags, {})

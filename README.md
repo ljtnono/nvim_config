@@ -37,6 +37,7 @@ vim ~/.config/nvim/init.lua
 * 自动补全
 * tab栏切换
 * bufferline
+* 内置终端
 
 ## 问题解决
 
