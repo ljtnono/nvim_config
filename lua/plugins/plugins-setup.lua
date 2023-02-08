@@ -55,7 +55,6 @@ return require("packer").startup(function(use)
     use {
         "mhinz/vim-startify"
     }
-
     -- lsp相关
     use {
         "williamboman/mason.nvim",
@@ -77,10 +76,13 @@ return require("packer").startup(function(use)
     -- 自动补全括号
     use "windwp/nvim-autopairs"
     -- buffer分割线
-    use "akinsho/bufferline.nvim"
+    use {
+        "akinsho/bufferline.nvim",
+        tag = "v3.*",
+        requires = "nvim-tree/nvim-web-devicons"
+    }
     -- 左则git提示
     use "lewis6991/gitsigns.nvim"
-
     -- 终端管理
     use {
         "akinsho/toggleterm.nvim", tag = '*', config = function()
@@ -92,7 +94,6 @@ return require("packer").startup(function(use)
         "nvim-telescope/telescope.nvim", tag = "0.1.1",
         requires = { {"nvim-lua/plenary.nvim"} }
     }
-
     if packer_bootstrap then
         require('packer').sync()
     end
