@@ -24,9 +24,6 @@ vim.cmd([[
 
 return require("packer").startup(function(use)
     -- 配置git使用密钥clone加速
-    git = {
-       default_url_format = "git@github.com:%s"
-    }
     -- 安装packer插件管理器
     use "wbthomason/packer.nvim"
     -- 主题
@@ -81,7 +78,7 @@ return require("packer").startup(function(use)
         tag = "v3.*",
         requires = "nvim-tree/nvim-web-devicons"
     }
-    -- 左则git提示
+    -- 左侧git提示
     use "lewis6991/gitsigns.nvim"
     -- 终端管理
     use {
