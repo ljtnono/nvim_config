@@ -1,8 +1,8 @@
-# nvim配置
+<h1 align="center">Nvim配置</h1>
 
-## 环境要求
+## 环境设置
 
-nvim版本号：v0.8以上
+nvim版本号：v0.8.0以上
 
 ## 使用方式
 
@@ -11,7 +11,7 @@ nvim版本号：v0.8以上
 
 ```bash
     
-    git clone git@github.com:ljtnono/nvim_config.git
+git clone git@github.com:ljtnono/nvim_config.git
 
 ```
 
@@ -43,7 +43,7 @@ vim ~/.config/nvim/init.lua
 
 1、下载插件很慢如何解决？
 
-配置git代理，具体操作如下：
+配置git代理（需要科学上网，例如clash，默认端口为7890），具体操作如下：
 
 ```bash
 

@@ -15,7 +15,7 @@ keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 ---------- 正常模式 ----------
 ---------- 窗口相关 ----------
 -- 水平分屏
-keymap.set("n", "<leader>sv", "<C-w>v") 
+keymap.set("n", "<leader>sv", "<C-w>v")
 -- 垂直分屏
 keymap.set("n", "<leader>sh", "<C-w>s")
 

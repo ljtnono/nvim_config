@@ -22,8 +22,6 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- 设置lua语言的配置
 lspconfig.sumneko_lua.setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
     capabilities = capabilities,
     settings = {
         Lua = {
@@ -45,8 +43,6 @@ lspconfig.sumneko_lua.setup {
 
 -- 设置python语言的配置
 lspconfig.pyright.setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
     capabilities = capabilities,
     settings = {
         python = {
@@ -63,18 +59,18 @@ lspconfig.pyright.setup {
 -- 设置vue语言的配置
 lspconfig.volar.setup {
     filetypes = {
-        "typescript", 
-        "javascript", 
-        "javascriptreact", 
-        "typescriptreact", 
-        "vue", 
+        "typescript",
+        "javascript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue",
         "json"
     }
 }
 
 -- 设置java语言的配置
-lspconfig.jdtls.setup{ 
-    cmd = { 
+lspconfig.jdtls.setup {
+    cmd = {
         "jdtls"
     },
     filetypes = {

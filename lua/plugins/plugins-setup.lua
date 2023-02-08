@@ -34,9 +34,9 @@ return require("packer").startup(function(use)
     -- 状态栏
     use {
         "nvim-lualine/lualine.nvim",
-        requires = { 
-            "kyazdani42/nvim-web-devicons", 
-            opt = true 
+        requires = {
+            "kyazdani42/nvim-web-devicons",
+            opt = true
         }
     }
     -- 文件导航插件
@@ -59,7 +59,8 @@ return require("packer").startup(function(use)
     -- lsp相关
     use {
         "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",  -- 这个相当于mason.nvim和lspconfig的桥梁
+        -- 这个相当于mason.nvim和lspconfig的桥梁
+        "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig"
     }
     -- 自动补全
