@@ -52,3 +52,28 @@ git config --global https.proxy "https://12.0.0.1:7890"
 
 ```
 
+2、nvim-tree在终端下无法正常显示icon
+
+系统缺少相应的字体，安装后配置一下终端的字体即可，这里以mac的alacritty终端环境为例：
+
+```bash
+
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+
+```
+
+设置终端字体为nerdfont（终端环境alacritty）
+
+alacritty.yml
+
+```yml
+
+font:
+  size: 16
+  normal:
+    family: "Hack Nerd Font"
+
+```
+
+
