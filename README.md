@@ -19,7 +19,7 @@ git clone git@github.com:ljtnono/nvim_config.git
 
 ```bash
 
-vim ~/.config/nvim/init.lua
+vim ~/.config/nvim/lua/plugins/plugins-setup.lua
 
 # 打开文件之后执行命令
 
