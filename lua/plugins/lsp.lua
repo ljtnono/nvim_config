@@ -12,8 +12,10 @@ require("mason").setup({
 require("mason-lspconfig").setup({
     -- 确保安装
     ensure_installed = {
-        "sumneko_lua",
-        "pyright"
+        "pyright",
+        "lua_ls",
+        "jdtls",
+        "volar"
     }
 })
 
@@ -21,7 +23,7 @@ local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 -- 设置lua语言的配置
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
     capabilities = capabilities,
     settings = {
         Lua = {
