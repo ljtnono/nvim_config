@@ -10,7 +10,10 @@ keymap.set("i", "kj", "<ESC>")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
+
 ---------- 正常模式 ----------
+-- 取消搜索高亮
+keymap.set("n", "<leader>nh", ":noh<CR>")
 ---------- 窗口相关 ----------
 -- 水平分屏
 keymap.set("n", "<leader>sv", "<C-w>v")
@@ -21,13 +24,14 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
--- bufferline
+-- bufferline 显示文件tab栏
 keymap.set("n", "<leader>h", ":bprevious<CR>")
 keymap.set("n", "<leader>l", ":bnext<CR>")
 
--- telescope
+-- telescope 全局文件搜索
 local telescopeBuiltin = require("telescope.builtin")
 keymap.set('n', '<leader>ff', telescopeBuiltin.find_files, {})
 keymap.set('n', '<leader>fg', telescopeBuiltin.live_grep, {})
 keymap.set('n', '<leader>fb', telescopeBuiltin.buffers, {})
 keymap.set('n', '<leader>fh', telescopeBuiltin.help_tags, {})
+
