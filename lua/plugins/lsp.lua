@@ -81,4 +81,16 @@ lspconfig.jdtls.setup {
     single_file_support = true
 }
 
+-- 设置c语言的配置
+lspconfig.clangd.setup {
+    cmd = {
+        "clangd"
+    },
+    filetypes = {
+        "c",
+        "cpp"
+    },
+    single_file_support = true
+}
+
 
